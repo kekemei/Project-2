@@ -1,0 +1,32 @@
+.background    { background: rgb(52, 166, 251);
+                 table-layout: fixed;
+                 border-spacing: 0;   }
+.background td { padding: 0;          }
+.lava          { background-image: url(https://media.giphy.com/media/Jd3YqxseQXjmU/source.gif); }
+.wall          { background-image: url(https://media.indiumgames.com/medialibrary/2014/07/Pixel_BrickWall2x4.png); }
+
+.actor  { position: absolute;  }
+.player { background-image: url(https://i.pinimg.com/originals/d1/3a/0c/d13a0cd665cb1e203a9b529a446347ba.gif);
+          background-size: 16px 30px;}
+.coin   { background-image: url(https://giant.gfycat.com/EasygoingPinkDobermanpinscher.gif);
+          background-size: 12px 12px;}
+.bling   { background: rgb(265, 180, 89); }
+.floater { background: white;}
+.flag    { background-image: url(http://pixelartmaker.com/art/70799067c8feee5.png);
+            background-size: 20px 20px;}
+.spike   { background-image: url(https://vignette.wikia.nocookie.net/scribblenauts/images/8/8d/Steel_Spike.png/revision/latest?cb=20130105173440);
+           background-size: 20px 20px; }
+
+.game {
+  overflow: hidden;
+  max-width: 600px;
+  max-height: 450px;
+  position: relative;
+}
+
+.lost .player {
+  background: rgb(160, 64, 64);
+}
+.won .player {
+  box-shadow: -4px -7px 8px white, 4px -7px 8px white;
+}
