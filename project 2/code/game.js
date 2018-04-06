@@ -341,7 +341,7 @@ Player.prototype.moveX = function(step, level, keys) {
 };
 
 var gravity = 55;
-var jumpSpeed = 25;
+var jumpSpeed = 27;
 var playerYSpeed = 11;
 
 Player.prototype.moveY = function(step, level, keys) {
@@ -405,7 +405,7 @@ Level.prototype.playerTouched = function(type, actor) {
       this.finishDelay = 1;
     }
   }
-  else if (type == "bling") {
+  else if (type == "bling", "coin") {
     this.actors = this.actors.filter(function(other) {
       return other != actor;
       });
@@ -492,5 +492,5 @@ function runGame(plans, Display) {
         console.log("You win!");
     });
   }
-  startLevel(0);
+  startLevel(1);
 }
