@@ -386,7 +386,14 @@ Level.prototype.playerTouched = function(type, actor) {
     this.status = "lost";
     this.finishDelay = 1;
 
-  } else if (type == "coin") {
+  }
+  if (type == "spike" && this.status == null) {
+    this.status = "lost";
+    this.finishDelay = 1;
+
+  }
+
+  else if (type == "flag") {
     this.actors = this.actors.filter(function(other) {
       return other != actor;
     });
